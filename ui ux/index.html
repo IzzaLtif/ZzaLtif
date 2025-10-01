@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mobile App Preview - Dengan Kotak Gambar</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="frame">
+    <header class="app-header">
+      <div class="brand">MyApp</div>
+      <div class="avatar">👤</div>
+    </header>
+
+    <main class="content">
+      <!-- Card utama -->
+      <div class="card popup">
+        <div class="icon-arrow">↑</div>
+        <h2 class="card-title">Selamat Datang</h2>
+        <p class="card-sub">Mulai perjalananmu dengan cepat dan mudah.</p>
+        <button class="btn-primary">Get Started</button>
+      </div>
+
+      <p class="note">Hasil preview pada tampilan mobile:</p>
+
+      <!-- Kotak gambar yang bisa diganti dan di-edit deskripsinya -->
+      <section class="image-box-wrapper">
+        <div class="image-box" id="imageBox">
+          <img id="previewImg" src="img2.jpg" alt="Preview" />
+          <div class="image-overlay">
+            <button id="changeBtn" class="small-btn">Ganti Gambar</button>
+          </div>
+        </div>
+        <input type="file" id="fileInput" accept="image/*" style="display:none" />
+
+        <div class="desc-wrap">
+          <h3 class="desc-title">Deskripsi</h3>
+          <!-- contenteditable supaya user bisa klik & edit langsung -->
+          <p id="descText" class="desc-text" contenteditable="true" spellcheck="true">
+            Klik untuk mengedit penjelasan gambar. Tulis keterangan singkat: apa, kapan, siapa, dan kenangannya.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <nav class="bottom-nav">
+      <button class="nav-btn">🏠</button>
+      <button class="nav-btn">🔍</button>
+      <button class="nav-btn">➕</button>
+      <button class="nav-btn">💬</button>
+      <button class="nav-btn">⚙️</button>
+    </nav>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+      <!-- Galeri -->
+      <section class="gallery-section">
+        <h3 class="gallery-title">di atas adalah contoh versi app/web jika sudah jalan dan dapat di gunakan (ilustrasi), dan di bawah ini adalah desain awal kami yang nantinya bisa di kembangkan lagi dan masi memperhatikan kenyamanan user.
+</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="img1.png" alt="Foto 1" />
+            <p class="gallery-desc">contoh desain</p>
+        </div>
+      </section>
